@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
         expiration: 45,
       },
     ]),
-    BrowserModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' })
   ],
   exports: [AbModule],
   providers: [],
